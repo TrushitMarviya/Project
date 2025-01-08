@@ -11,6 +11,7 @@
         background-size: cover;
         background-position:center;
         color: #eee;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     form input{
         width: 325px;
@@ -33,11 +34,49 @@
         color: white;
         border-radius: 8px;
     }
-    input[type="file"]::-webkit-file-upload-button {
+  input[type="file"]::-webkit-file-upload-button {
   background-color: transparent;
   border: 1px solid ;
   color: #fff;
   cursor: pointer;
+}
+@media screen and (max-width: 1300px) {
+  body{
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://img.freepik.com/free-photo/movie-background-collage_23-2149876023.jpg");
+        background-size: 100vw;
+        background-position:inherit;
+        color: #eee;
+    }  
+    h1{
+      font-size: 55px ;
+      margin-top: 150px;
+    }
+}
+@media screen and (max-width: 825px) {
+  body{
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://img.freepik.com/free-photo/movie-background-collage_23-2149876023.jpg");
+        background-size: 225vw;
+        background-position:inherit;
+        color: #eee;
+    }  
+    h1{
+      font-size: 55px;
+      margin-top: 250px;
+    }
+    form input {
+      width: 400px;
+    }
+    form {
+      margin-top:225 px;
+    }
+}
+@media screen and (max-width: 430px){
+  body{
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://img.freepik.com/free-photo/movie-background-collage_23-2149876023.jpg");
+        background-size: 250vw;
+        background-position:inherit;
+        color: #eee;
+    }
 }
   </style>
   <body>
