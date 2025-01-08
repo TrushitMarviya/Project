@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body{
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://img.freepik.com/free-photo/movie-background-collage_23-2149876023.jpg");
+        background-size: cover;
+        background-position:center;
+        color: #eee;
+    }
+    form input{
+        width: 325px;
+        display: block;
+        font-size: 18px;
+        margin: 20px;
+        border-radius: 8px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 15px;
+        border: 1px solid #ccc;
+        background-color: transparent;
+        color: #fff;
+    }
+    form button {
+        height: 45px;
+        width: 175px;
+        border: 1px solid #eee;
+        background-color: #011219;
+        font-size: 17px;
+        color: white;
+        border-radius: 8px;
+    }
+    input[type="file"]::-webkit-file-upload-button {
+  background-color: transparent;
+  border: 1px solid ;
+  color: #fff;
+  cursor: pointer;
+}
+  </style>
+  <body>
+    <center>
+      <h1>Add Movies</h1>
+      <form action="/showMovie" method="post" enctype="multipart/form-data">
+        <input type="text" placeholder="Movie Name" name="name"  />
+        <input type="text" placeholder="Movie Genre" name="genre" />
+        <input type="file" placeholder="Enter Movie Name" name="img" />
+        <button type="submit">Add Movie</button>
+      </form>
+      
+    </center>
+  </body>
+</html>

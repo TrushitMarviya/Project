@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <img
+          src="https://brandlogos.net/wp-content/uploads/2022/10/bookmyshow-logo_brandlogos.net_rzqea.png"
+          alt=""
+        />
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          placeholder="Search for Movies, Events, Plays, Sports and Activities"
+        />
+      </div>
+      <div class="right">
+        <p>Rajkot <i class="fa-solid fa-chevron-down"></i></p>
+        <button id="addMovie" onclick="addMovie()">Add Movie</button>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <nav>
+      <div class="side1">
+        <a href="" id="a1">Movies</a>
+        <a href="">Stream</a>
+        <a href="">Events</a>
+        <a href="">Plays</a>
+        <a href="">Sports</a>
+        <a href="">Activities</a>
+      </div>
+      <div class="side2">
+        <a href="">ListYourShow</a>
+        <a href="">Corporate</a>
+        <a href="">Offers</a>
+        <a href="">Gift Cards</a>
+      </div>
+    </nav>
+    <div class="slider">
+      <img
+        src="https://assets-in.bmscdn.com/promotions/cms/creatives/1726036566435_playcardnewweb.jpg"
+        alt=""
+        class="img"
+      />
+      <img
+        src="https://assets-in.bmscdn.com/promotions/cms/creatives/1736059895463_asblivewebcarousel.jpg"
+        alt=""
+        class="img"
+      />
+    </div>
+    <div class="movies"> <br><br><br>
+      <h1>Your Movies</h1>
+      <br />
+      <div class="card-container">
+        <% data.map((e,i)=>{ %>
+        <div class="card-2">
+        <div class="innn">
+          <div class="img-movie">
+          <img src="<%=e.img%>" alt="" class="card-image" /> <br /><br />
+        </div>
+        <div class="detail-2">
+          <h3><%=e.name%></h3>
+          <p><%=e.genre%></p>
+        </div>
+        </div>
+          <div class="card-footer">
+            <button class="action-button" id="delete">
+              <a href="/deleteMovie?id=<%=e.id%>"
+                ><i class="fa-solid fa-trash"></i
+              ></a>
+            </button>
+            <button class="action-button" id="edit">
+              <a href="/editMovie?id=<%=e.id %>"
+                ><i class="fa-solid fa-pen-to-square"></i
+              ></a>
+              </button>
+          </div>
+          <br />
+        </div>
+        <%})%>        
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  let pic = document.querySelectorAll(".img");
+  let index = 0;
+
+  function slides(index) {
+    for (let i = 0; i < pic.length; i++) {
+      pic[i].style.display = "none";
+    }
+    pic[index].style.display = "block";
+  }
+
+  function show() {
+    slides(index);
+    setInterval(() => {
+      index++;
+      if (index === pic.length) {
+        index = 0;
+      }
+      slides(index);
+    }, 1500);
+  }
+
+  show();
+
+  const addMovie = () => {
+    window.location.href = "/addMovie";
+  };
+</script>
