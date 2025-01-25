@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input {
+    height: 40px;
+    width: 325px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 17px;
+    padding-left: 10px;
+    display: block;
+}
+
+#bt1 {
+    height: 45px;
+    width: 100px;
+    border-radius: 7px;
+    border: none;
+    background-color: blue;
+    color: #fff;
+    font-size: 18px;
+    
+}
+
+th, td {
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+#bt2 {
+    height: 45px;
+    width: auto;
+    background-color: transparent;
+    border-radius: 7px;
+    border: none;
+    color: red;
+    font-size: 18px;
+}
+
+#bt3 {
+    height: 45px;
+    width: auto;
+    background-color: transparent;
+    border-radius: 7px;
+    border: none;
+    color: green;
+    font-size: 18px;
+    margin-left: 19px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #bt1, #bt2, #bt3 {
+        width: 100%;
+        font-size: 16px;
+        height: 40px;
+    }
+
+    th, td {
+        font-size: 18px;
+        padding: 3px;
+    }
+}
+
+@media (max-width: 400px) {
+    input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #bt1, #bt2, #bt3 {
+        width: 100%;
+        font-size: 15px;
+        height: 35px;
+    }
+
+    th, td {
+        font-size: 16px;
+        padding: 3px;
+    }
+}
