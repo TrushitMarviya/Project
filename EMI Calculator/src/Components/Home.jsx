@@ -102,40 +102,42 @@ export default function Home() {
         </button>
         <br />
         <br />
-        <table border={2} width={"100%"}>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Loan Amount</th>
-              <th>Rate Interest</th>
-              <th>Time (Months)</th>
-              <th>Monthly Interest</th>
-              <th>Total Interest</th>
-              <th colSpan={2}>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            {record &&
-              record.map((e, i) => (
-                <tr key={i}>
-                  <td>{e.name}</td>
-                  <td>{e.principal}</td>
-                  <td>{e.rate} %</td>
-                  <td>{e.month}</td>
-                  <td>{e.monthEmi.toFixed(0)} </td>
-                  <td>{e.TotalEmi.toFixed(0)} </td>
-                  <td>
-                    <button id="bt2" onClick={() => handleDelete(e.id)}>
-                      <i className="fa-solid fa-trash"></i>
-                    </button>
-                    <button id="bt3" onClick={() => handleEdit(e.id)}>
-                      <i className="fa-solid fa-pen-to-square"></i>
-                    </button>
-                  </td>
-                </tr>
-              ))}
-          </tbody>
-        </table>
+        <div className="table-container">
+          <table border={2} width={"100%"}>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Loan Amount</th>
+                <th>Rate Interest</th>
+                <th>Time (Months)</th>
+                <th>Monthly Interest</th>
+                <th>Total Interest</th>
+                <th colSpan={2}>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {record &&
+                record.map((e, i) => (
+                  <tr key={i}>
+                    <td>{e.name}</td>
+                    <td>{e.principal}</td>
+                    <td>{e.rate} %</td>
+                    <td>{e.month}</td>
+                    <td>{e.monthEmi.toFixed(0)} </td>
+                    <td>{e.TotalEmi.toFixed(0)} </td>
+                    <td>
+                      <button id="bt2" onClick={() => handleDelete(e.id)}>
+                        <i className="fa-solid fa-trash"></i>
+                      </button>
+                      <button id="bt3" onClick={() => handleEdit(e.id)}>
+                        <i className="fa-solid fa-pen-to-square"></i>
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        </div>
       </center>
     </div>
   );

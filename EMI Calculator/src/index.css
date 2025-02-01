@@ -17,12 +17,13 @@ input {
 
 #bt1 {
     height: 45px;
-    width: 100px;
+    width: 170px;
     border-radius: 7px;
     border: none;
     background-color: blue;
     color: #fff;
     font-size: 18px;
+    cursor: pointer;
     
 }
 
@@ -40,6 +41,7 @@ th, td {
     border: none;
     color: red;
     font-size: 18px;
+    cursor: pointer;
 }
 
 #bt3 {
@@ -51,42 +53,84 @@ th, td {
     color: green;
     font-size: 18px;
     margin-left: 19px;
+    cursor: pointer;
 }
 
-/* Media Queries for Responsiveness */
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
 
-@media (max-width: 768px) {
+/* Mobile devices */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
     input {
         width: 100%;
-        font-size: 16px;
+        margin-bottom: 10px;
     }
-
     #bt1, #bt2, #bt3 {
         width: 100%;
-        font-size: 16px;
-        height: 40px;
+        margin: 10px 0;
     }
-
+    .table-container {
+        width: 100%;
+        margin-top: 5px;
+    }
+    table {
+        width: 100%;
+    }
     th, td {
-        font-size: 18px;
-        padding: 3px;
+        font-size: 16px;
+        padding: 10px;
     }
 }
 
-@media (max-width: 400px) {
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
     input {
-        width: 100%;
-        font-size: 14px;
+        width: 80%;
     }
-
     #bt1, #bt2, #bt3 {
-        width: 100%;
-        font-size: 15px;
-        height: 35px;
+        width: 80%;
+        margin: 5px 0;
     }
-
-    th, td {
-        font-size: 16px;
-        padding: 3px;
+    .table-container {
+        width: 100%;
+    }
+    table {
+        width: 100%;
     }
 }
+
+/* Computers */
+@media (min-width: 1025px) {
+    input {
+        width: 50%;
+    }
+    #bt1{
+        width: 125px;
+    } #bt2, #bt3 {
+        width: auto;
+        margin: 5px;
+    }
+    .table-container {
+        width: 100%;
+    }
+    table {
+        width: 100%;
+    }
+}
+
