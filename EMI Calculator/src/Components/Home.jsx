@@ -29,6 +29,7 @@ export default function Home() {
       setRecord(data);
       localStorage.setItem("Record", JSON.stringify(data));
       setEditIndex(null);
+      alert ("Record Updated");
     } else {
       const obj = {
         id: Date.now(),
@@ -42,6 +43,8 @@ export default function Home() {
       oldRec.push(obj);
       setRecord(oldRec);
       localStorage.setItem("Record", JSON.stringify(oldRec));
+      alert ("Record Added");
+
     }
     setName("");
     setPrincipal("");
@@ -53,6 +56,7 @@ export default function Home() {
     let updatedRec = record.filter((item) => item.id != id);
     setRecord(updatedRec);
     localStorage.setItem("Record", JSON.stringify(updatedRec));
+    alert ("Record Deleted ");
   };
   const handleEdit = (id) => {
     let editRec = record.find((item) => item.id == id);
