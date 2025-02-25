@@ -1,0 +1,10 @@
+.skill-item {
+  margin: 20px 0;
+}
+
+.skill-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}

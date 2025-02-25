@@ -1,0 +1,11 @@
+.custom-toggler {
+    background-color: transparent;
+    border-color: rgb(228, 205, 205); 
+    padding: 8px 12px; 
+    border-radius: 5px; 
+  }
+  
+  .custom-toggler .navbar-toggler-icon {
+    filter: invert(1);
+  }
+  
