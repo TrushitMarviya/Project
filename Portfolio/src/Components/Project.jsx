@@ -9,9 +9,9 @@ const projects = [
       "Making Responsive and userFriendly using Bootstrap",
       "Add the Resume also in Portfolio"
     ],
-    github: "#",
-    live: "#",
-    tags: ["React", "Bootstrap", "JavaScript"], 
+    github: "https://github.com/TrushitMarviya/Project/tree/main/Portfolio",
+    live: "https://portfolioweb-a0711.web.app/",
+    tags: ["React", "Bootstrap", "JavaScript","Firebase"], 
   },
   {
     title: "Money Manager",
@@ -22,7 +22,7 @@ const projects = [
     ],
     github: "https://github.com/TrushitMarviya/React-Js/tree/main/Money-Manager",
     live: "https://money-manager-3d85d.web.app/",
-    tags: ["React", "Media Query"],
+    tags: ["React", "Media Query","Firebase"],
   },
   {
     title: "Task Manager",
@@ -44,7 +44,7 @@ const projects = [
     ],
     github: "https://github.com/TrushitMarviya/React-Js/tree/main/Counter%20React%20Project",
     live: "https://counter-app-62de7.web.app/",
-    tags: ["React", "MediaQuery"],
+    tags: ["React", "MediaQuery","Firebase"],
   },
   {
     title: "EMI Calculator",
@@ -54,8 +54,8 @@ const projects = [
       "Uses JavaScript for calculations"
     ],
     github: "https://github.com/TrushitMarviya/Project/tree/main/EMI%20Calculator",
-    live: "#",
-    tags: ["React", "JavaScript"],
+    live: "https://emi-15537.web.app/",
+    tags: ["React", "JavaScript","Firebase"],
   },
 ];
 

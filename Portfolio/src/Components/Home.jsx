@@ -19,7 +19,7 @@ export default function Home() {
             <i class="fa-brands fa-github fs-3"></i>
             </button>
             </a>
-            <a href="mailto:your-email@gmail.com" target='_blank'>
+            <a href="mailto:marviyatrushit0@gmail.com" target='_blank'>
             <button type='button' className="btn btn-light text-center ms-5 " style={{backgroundColor:"white"}}>
             <i class="fa-solid fa-envelope fs-3"></i>
             </button>
