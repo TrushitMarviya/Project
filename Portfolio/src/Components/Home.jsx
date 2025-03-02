@@ -9,7 +9,7 @@ export default function Home() {
             <p className="text-center display-2 fw-bolder">Trushit Marviya </p>
             <p className="text-center fs-2 fw-bolder mb-5">I'm Fullstack Web Developer</p>
             <center>
-            <a href="https://www.linkedin.com/feed/" target='_blank'>
+            <a href="https://www.linkedin.com/in/trushit-marviya-164110284/" target='_blank'>
             <button type='button' className="btn btn-light text-center"  style={{backgroundColor:"white"}}>
             <i class="fa-brands fa-linkedin-in fs-3"></i>
             </button>
