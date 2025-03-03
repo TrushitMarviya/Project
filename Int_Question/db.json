@@ -1,0 +1,28 @@
+{
+  "city": [
+    {
+      "id": "1741008071423",
+      "name": "Rajkot"
+    },
+    {
+      "id": "1741008262520",
+      "name": "Surat"
+    }
+  ],
+  "user": [
+    {
+      "id": "1741008272517",
+      "name": "Adam",
+      "city": "Surat",
+      "salary": "1000",
+      "mobile": "7016298710"
+    },
+    {
+      "id": "1741008306336",
+      "name": "Benjamin",
+      "city": "Rajkot",
+      "salary": "1000",
+      "mobile": "1203040509"
+    }
+  ]
+}

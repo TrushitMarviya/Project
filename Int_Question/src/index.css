@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+label{
+    font-size: 1.5rem;
+}
+input{
+    width: 300px;
+    height: 42px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    border: 2px solid #ccc;
+} 
+select{
+    width: 300px;
+    height: 42px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    border: 2px solid #ccc;
+}
+#bt1{
+    height: 38px;
+    width: 125px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    font-size: 22px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button i {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+button i.fa-trash {
+    font-size: 22px;
+    color: red;
+    margin-left: 50px;
+}
+
+button i.fa-pen-to-square {
+    font-size: 22px;
+    color: green;
+    margin-left: 50px;
+}
