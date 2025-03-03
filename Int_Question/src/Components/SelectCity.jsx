@@ -126,24 +126,25 @@ export default function SelectCity() {
           </thead>
           <tbody>
             {users &&
-             users.map((e,i)=>{
-              <tr key={i}>
-                <td>{i+1}</td>
-                <td>{e.name}</td>
-                <td>{e.city}</td>
-                <td>{e.salary}</td>
-                <td>{e.mobile}</td>
-                <td>
-                  <button onClick={()=>handleEdit(e.id)}>
-                    <i className="fa-solid fa-pen-to-square"></i>
-                  </button>
-                  <button onClick={()=>handleDelete(e.id)}>
-                    <i className="fa-solid fa-trash"></i>
-                  </button>
-                </td>
-              </tr>
-              })
-            }
+              users.map((e, i) => {
+                return (
+                  <tr key={i}>
+                    <td>{i + 1}</td>
+                    <td>{e.name}</td>
+                    <td>{e.city}</td>
+                    <td>{e.salary}</td>
+                    <td>{e.mobile}</td>
+                    <td>
+                      <button onClick={() => handleEdit(e.id)}>
+                        <i className="fa-solid fa-pen-to-square"></i>
+                      </button>
+                      <button onClick={() => handleDelete(e.id)}>
+                        <i className="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                );
+              })}
           </tbody>
         </table>
       </center>
